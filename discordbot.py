@@ -11,8 +11,19 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+  if message.content.startswith('Hol'):
+        await message.channel.send('Tomatela flaco!')
 
-    if message.content.startswith('$Holi'):
+    if message.content.startswith('75'):
+        await message.channel.send('Me importa un carajo, tomatela te dije')
+
+    if message.content.startswith('ja'):
         await message.channel.send('Quien te conoce papa?')
+        
+    if message.content.startswith('xd'):
+        await message.channel.send('Atiendo boludos')
 
-client.run(os.getenv('ODA5MTA5MTIzNzY4NjQ3NzAx.YCQTlw.Mnkmcufqn9I09_5kyDuiTQcK2Os'))
+    if message.content.startswith('xD'):
+        await message.channel.send('Sos un boludo y no tenes huevos')
+
+client.run(os.getenv('token'))
